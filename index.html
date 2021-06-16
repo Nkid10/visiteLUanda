@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Visite Luanda</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="description" content="Visite Luanda">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Afonso Nkidisala">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header>
+		<div class="log">
+			<h1>Visite <b>Luanda</b></h1>
+		</div>
+		<div class="menu-desktop">
+			<ul>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">Service</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<i id="click" class="fa fa-bars"></i>
+		</div>
+		<div class="clear"></div>
+	</header>
+	<section id="toogle" class="menu-mobile">
+		<div class="center">
+			<div class="mobile">
+			<ul>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">Service</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			</div>
+		</div>
+	</section>
+	<section class="central">
+		<h1>Luanda</h1>
+		<span> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+		</span>
+		<button>Visite Agora<i class="fa fa-arrow-right"></i></button>
+
+	</section>
+	<footer>
+		<div class="center">
+			<div class="social-media">
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				</ul>
+			
+			</div>
+
+			<div class="allr">
+				<span>Todos direitos reservados a visite Lunda | 2021-2022</span>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js
+"></script>
+<script>
+		$(document).ready(function(){
+			$("#click").click(function(){
+				$("#toogle").slideToggle();
+			});
+			});
+		
+	
+</script>
+</body>
+</html>

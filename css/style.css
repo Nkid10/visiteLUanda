@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	height: 100%;
+	background-image: linear-gradient(rgb(0,0,0,0.75),rgb(0,0,0,0.75)),url('../img/luanda.jpg');
+	background-size: cover;
+}
+.center{
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+.clear{
+	clear: both;
+}
+header{
+	width:100%;
+	min-height: 12vh;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	padding: 22px 45px;
+}
+.log{
+	margin:12px 10%;
+	color: #ffff;
+	cursor: pointer;
+}
+
+.log b{
+	color: #e4f403;
+}
+.menu-desktop{
+	padding-left: 22%;
+	color: white;
+}
+.menu-desktop ul{
+	margin: 25px 0;
+}
+.menu-desktop ul li{
+	padding: 0 18px;
+	list-style: none;
+	display: inline-block;
+}
+.menu-desktop ul li a{
+	text-decoration: none;
+	color: white;
+}
+.menu-desktop i{
+	display: none;
+	position: absolute;
+	top: 6.5%;
+	right: 5%;
+	font-size: 30px;
+	cursor: pointer;
+}
+.menu-mobile{
+	width: 100%;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+.mobile{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.mobile ul{
+
+}
+.mobile ul li{
+	display: block;
+	list-style: none;
+	padding: 3px 0;
+}
+.mobile ul li a{
+	text-decoration: none;
+	color: #ffff;
+}
+.central{
+	min-height: 70vh;
+	background-color: transparent;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+.central h1{
+	
+	text-transform: uppercase;
+	color: #e4f403;
+}
+.central span{
+	width: 60%;
+	margin: 5px 18px;
+	color: #ffff;
+}
+.central button{
+	width: 40%;
+	height: 35px;
+	border-radius: 10px;
+	outline: none;
+	background-color: transparent;
+	color: #fff;
+	cursor: pointer;
+}
+.central button i{
+	width: 50px;
+	height: 20px;
+	color: #fff;
+}
+footer{
+	width: 100%;
+	min-height: 80px;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border: 1px solid #525250;
+}
+footer ul{
+	text-align: center;
+}
+footer ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 0 12px;
+}
+footer ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 28px;
+}
+footer ul li a i{
+	width: 20px;
+
+}
+.allr{
+	width: 100%;
+}
+.allr span{
+	padding: 12px 0;
+	color: #fff;
+	font-size: 14px;
+}
+/* efeitos */
+.menu-desktop ul li:hover{
+	border-bottom: 1px solid #f1cf2d;
+}
+.menu-desktop ul li:nth-child(2):hover{
+	border-bottom: 1px solid #fa0d26;
+}
+.menu-desktop ul li:nth-child(3):hover{
+	border-bottom: 1px solid green;
+}
+.menu-desktop ul li:nth-child(4):hover{
+	border-bottom: 1px solid #de490d;
+}
+.menu-desktop ul li:hover{
+	border-bottom: 0.5px solid #f1cf2d;
+}
+.menu-desktop ul li:hover{
+	border-bottom: 0.5px solid #f1cf2d;
+}
+footer ul li:nth-child(1):hover{
+	background-color: #4645fb;
+	border-radius: 8px;
+	transition: 1s;
+
+}
+footer ul li:nth-child(2):hover{
+	background-color: #fa0d26;
+	border-radius: 8px;
+	transition: 1s;
+
+}
+footer ul li:nth-child(3):hover{
+	background-color: #26f14a;
+	border-radius: 8px;
+	transition: 1s;
+
+}
+footer ul li:nth-child(4):hover{
+	background-color: #f62408;
+	border-radius: 8px;
+	transition: 1s;
+
+}
+footer ul li:nth-child(5):hover{
+	background-color: #1cc9e8;
+	border-radius: 8px;
+	transition: 0.5s;
+
+}
+.central button:hover{
+	background-color: rgb(229, 180, 44);
+	color: black;
+}
+.central button i:hover{
+	color: black;
+}
+.mobile ul li:hover{
+	width: 100%;
+	border-bottom: 0.5px solid #f1cf2d;
+	}
+.mobile ul li:nth-child(2):hover{
+	border-bottom: 1px solid #fa0d26;
+}
+.mobile ul li:nth-child(3):hover{
+	border-bottom: 1px solid green;
+}
+.mobile ul li:nth-child(4):hover{
+	border-bottom: 1px solid #de490d;
+}
+.mobile ul li:hover{
+	border-bottom: 0.5px solid #f1cf2d;
+}
+.mobile ul li:hover{
+	border-bottom: 0.5px solid #f1cf2d;
+}	
+/* responsividades */
+@media screen and (max-width: 960px){
+	.menu-desktop ul{
+		display: none;
+	}
+	.menu-desktop i{
+		display: inline;
+	}
+	.central button{
+		width: 70%;
+	}
+	.central span{
+		width: 80%;
+		margin: 12px 22px;
+		width: 90%;
+	}
+	footer{
+		position: relative;
+		bottom: 0;
+		font-size: 12px;
+		border-bottom: none;
+	}
+	.mobile{
+		width: 100%;
+	}
+	.log{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 500px){
+	.log{
+		font-size: 13px;
+
+	}
+	.central h1{
+		font-size:18px ;
+	}
+	.central span{
+		font-size: 15px;
+		padding-left: 16px;
+	}
+	.central button{
+		width: 90%;
+	}
+	footer{
+		border: none;
+	}
+	footer ul li a i{
+		font-size: 18px;
+	}
+	footer span{
+		font-size: 11px;
+		
+	}
+	
+}
